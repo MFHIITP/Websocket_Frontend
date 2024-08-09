@@ -23,7 +23,7 @@ function App() {
   
 
   useEffect(() => {
-    const connection = new WebSocket("ws://localhost:3000");
+    const connection = new WebSocket("wss://websocket-backend-97ub.onrender.com");
     connection.onopen = () => {
       console.log("Connection Established");
     };
